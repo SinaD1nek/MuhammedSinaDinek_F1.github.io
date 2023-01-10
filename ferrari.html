@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang=TR">
+<head>
+  <title>SCUDERİA FERRARİ</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+       body {
+  background-image: url('https://static.vecteezy.com/system/resources/previews/002/681/541/original/red-fiber-carbon-background-free-vector.jpg');
+  
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size:cover;
+  
+}
+    #customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #aa0404;
+  color: white;
+}
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #525151;
+      padding: 25px;
+    }
+    
+  .carousel-inner img {
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+      min-height:200px;
+  }
+
+  /* Hide the carousel text when the screen is less than 600 pixels wide */
+  @media (max-width: 600px) {
+    .carousel-caption {
+      display: none; 
+    }
+  }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+    <CENTER>
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+       <img src="https://upload.wikimedia.org/wikipedia/tr/thumb/c/c0/Scuderia_Ferrari_Logo.svg/1511px-Scuderia_Ferrari_Logo.svg.png" width="40" height="50">
+    </div>
+    
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="anasayfa.html">AnaSayfa</a></li>
+        <li><a href="ferrari.html">FERRARİ</a></li>
+        <li><a href="essekmartin.html">ASTON MARTİN</a></li>
+        <li><a href="mercedes.html">MERCEDES</a></li>
+        <li><a href="rb.html">REDBULL</a></li>
+        <li><a href="mclaren.html">MCLAREN</a></li>
+        <li><a href="haas.html">HAAS</a></li>
+        <li><a href="WILLIAMS.html">WILLIAMS</a></li>
+        <li><a href="AlfaRomeo.html">ALFA ROMEO</a></li>
+        <li><a href="BWT.html">BWT</a></li>
+        <li><a href="ALPHATAURI.html">ALPHATAURI</a></li>
+        <li><a href="form.html">İLETİŞİM</a></li>
+      </ul>
+      
+      
+    </div>
+   
+  </div></CENTER>
+</nav>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+       
+      <div class="item active">
+        <img src="https://images2.corriereobjects.it/methode_image/socialshare/2022/07/09/86784176-ff74-11ec-a15c-229c03190307.jpg" alt="Image" width="500" height="200">
+        <div class="carousel-caption">
+          <h3>Sell $</h3>
+          <p>Money Money.</p>
+        </div>      
+      </div>
+
+      <div class="item">
+        <img src="https://static.sky.it/editorialimages/4debe8d4c5558eda2800bed28a4f9362c86e1733/skysport/it/motori/formula-1/2020/08/07/f1-ferrari-nuovo-organigramma/00_copertina.jpg" alt="Image">
+        <div class="carousel-caption">
+          <h3>More Sell $</h3>
+          <p>Lorem ipsum...</p>
+        </div>      
+      </div>
+
+      <div class="item">
+        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUSExIVFhUWFxgXFRcWFRcVFxUYFxcXFxgWFhcYHSggGB0mHRUXITEhJSkrLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGi0lICUrLS0tLS0tLS8tLS0tLS0tLS0tLS0vLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIALcBEwMBIgACEQEDEQH/xAAcAAAABwEBAAAAAAAAAAAAAAAAAQIDBAUGBwj/xABHEAACAQIEAwUEBgcFBgcAAAABAhEAAwQSITEFIkEGE1FhcTKBkbEUI0KhwfAHUmJygpLRM0OTsuEVFlOiwvEkVGNzw9Li/8QAGQEAAwEBAQAAAAAAAAAAAAAAAAECAwQF/8QANBEAAQMCBAMGBQQCAwAAAAAAAQACEQMhEjFBUQRh8BMicZGh0RQygbHBBSPh8UJiM1KS/9oADAMBAAIRAxEAPwDr+H4iAAH0PQ7g++mOM4POudQD5abePnWTU37QAlSvUHmBEEQJ9n1FW/DOKLacL3ga2wmBOZD6b9BVjkglZPjXC7d1SrD06FT4g9K5xxvgtyw3MJQ+y42PkfA+Vdm7RGy7B7Tg5hJjx9Iqiu2ZBV1DKd9JBHmD/rXTTqlvhsueowFchdaYYVteNdlN3w/MOtsnmX92d/Q6+tZG7agkEQRoQdCPIiu5rw8SFyOaWmCohFIIp5hTTCgphNtTZpbUk1CsIooqVRUlSKhQoUJpNClUKSEmgxAiTv8AhH9aVQIIysCJUncT0WpcSBZU2JukUKU1yTJUA+Kbe9Tt6iipgykbIqFHQpoRUKFCkhChQoUIQoUdChCFChRxQkio6MCjAoQiFLAowKMLVQplJoU5loU4KmQujr2xuDdCfW5/+Kk4Pt81tg30cHxBuaEf4enqKxrmmi1R8PT29T7pdu86/ZdH4n25wj3Ay4e4oKjNGWS3WdYPqN/kq12rwLbtcT1Vj/lmuaFqRnp/Ds5+afbuXWl4hgrm2Jtz0zMFPumDVRxHsicQ+f6Qrr0gKGA6AONWjzmueM9Nh4MjQ+I0PxFIUIMgqjWmxCse0PBhhnK96ja6KDLjyYKCAfeKonp5qaathOqykaJoikkUsikkVKtNkUVOEUkikqBSYoUqKKkmioUcUIpoSada2QimDBLQY0Og6+41IwGDzEFvZ+daK7kdChGkfCNorNzoVALIUIp/F4VrZg7dD0NM1YSSDQpVJpIQoUqhQhJoUrLQihCFCKUBRxQlKRFGBS4owtOEpSQKUq0tUqTZsVQChz03YwxbYE+gnyrVcD7JFwz3SFCFQVJAY5pOg3jTU+YqFwoNbYMpIby8PA+I8jXTuxVlcUXF1dVAKi2sMd5nQjw3I3rOvjY2QnSLXOgqlt8Lw6gKFTT0oUvj3G0s4i5aQDKpgZl5tgdfjQrkHDvImfVbGq0GFz9npomjXWnBYNeiuABRyabJqTctEVGcUK0nNSWagTSDQmEM1JJoGk0SqhFRGlGkmpVIjSTSqSaE0VKtWGYwqk/nxNBTBBgGOh2NKxfEJ9pzPhMgemk/fUPMBU0SlDCNMaA/vD8DTtrB6+PuMfKq98aIAzMYmYkA6nx8qSuOAmAdRGoGmoPjrsa5jWK27NaCxhyd3VR4mY+PSpw4W4ktdtLBA1YzrHQCeo++scuJY7s5B36A/fUt+MGdWuHWeY5jsB1J8PuFT2irAr+7w24ZH1bDm2uLBy9dTPmOpqNf7M4kCRZeNtBmBPgGXQ1FsdogoAl9B+qp33qTe7bX2A/siw0DGwmcejRNMVSEiwqqvYZ1kMjCN5BEU1UzE8Ze7ll9cupzR1MKoIkCOgMa033oKwQCf2QFjwkxr8a2Y8u0UObCjxQo4pUVooSQKUBSgKUq0wpJSQtGFp+3Zmnxhj4VUKcShBKcVKf7qjC0AKC5FbSpdlaZWl95ViyzcrC3dAqTh+0V6yG7m4ySIOUkSPOqN71NPcpEygAq57TYsfSr2v2z1oVU8SuE3XPixoVDPlHgrcyXEq74BgFu3FRmyhiAWiYnrqR866jw39HVuRN0EeSg/JiOjfDzrmPCbkEV2Tgnau0MMS5JdAAdzJIOWSTMnL91Z1y8AFi2oFn+SwXbrs7aw7RafNpJ0gielc9xC61u+0vEe9dmnUkk+c1i8WNa3a0honNYvcCbKCabJpb00aSYQJpJoyaBpKkVFR0VJNJNFR0KE0VV2MSGPnrVjUfHJKz4fI1lWbLVpSdDlCyGJj3+NLNk+K/zqfkTQS8RAmR4EAgek7b0TKfj4bf6VxLrTi2f21PX7X/1pD2/NfjHzowhBkiI11+VNmhJOWsIzGBBPgGUn3CdaZyGYAk7QNflvQBj/Sl5x0UeXtaff+YpQmmqnYFdCaisxYydSYH4CrO3bgAeFb0GS6VlVdaEAKMClBaWqV2QuUlEq1Is2po7VmrfAYTWqAWZcrjs12TvYkZ0UFZiSyrrExqRWv4t2CWzhu9d1zfqg7+hp79HuJW05VnCqw1liokSRJBHiR13pf6Ru0IZu5VgVTTQ7nrXO4v7XCMlu3B2c6rlONtQTUM1Kxl2TUJ2roXMc0stTRekFqQWpSnhTjNTTNQEnQVdcJ4cpIOQ3WP60pZXf2iOZ/QZfeKhzwBdWGqmvPzN6n50K2ZQj2uIZD1RFVVXyVREChXP2w6n2WmA9R7qhsX4q3w3EiLTid2t/cH/AK1mluU+t7lPqvyauyQuYSrK/ipqvvPTffU27VZKQCS5plqWxpBNQVoERoqBojUq0KKhQoTRUKOk0ISqQ6yCPGjoVKFWIQCcyz74g/jTy3Z0GX+RPlr861XZuzaYEG2pMiTlkiTvMSB0rSWMMoJhdREcsfHT0rj7OLLq7TkubYu+dAWVjrMqJ2AEyPACKat3/DJrp7Fs/MV079vJoekDbYfD+tBrIkCN9+XqNz+fCjAgPXLjc8lPuA/yxQ5Tv68sk7ftGN66dcwttpXu1IG/1c6Hpt6+6ot/g+HZQe5tiT+qEJ0MnYdaMCeNc+wNuWnw1/pViFp/FWLaXHW2OUGNyZI3ielIUV10m4WrlqvlyJUp+2lJWnVNahYuKlWQBU61iYqq7ygbtVKhXD8TMb03xvHl71w+Lt86p3uUnE3JZvU/OpOfXJU0W65o7lyo7NRM1JJqVYCBNJJoE0gmlKuFJwVxVcFtR8Nemp29akYvi7nlSEUaAKdPcdz8arSaIHWsnsDlbbI+8bxPxoUTHU+p+dCs+zG6vGVKDU4G5T6j5GooanJ5f4vwrpJWGFOZ6ItTOahmpypwpZNETSZpM0pVAJRNJo5pM0iU0c0KKhSTR0KFChCOhRUKEK67J3YvhYnOIjxI5o+ANbW5bbLMCSdNzI9nf0X7q53wlyt+0wMEXE1/iFdZx2HQfa0UZ/aOzdND05tPIVm8XVtyVLdmZ0j0MSR6+HzFIVWynadMog+q9fWffT962vskxm19o6eI316fHypMoYadtPaPoY18dPjUFUCloh5dARGusTOuunkfjR8QfurL3WWIDEa7SJA95ZR7xpUnB2l1XMNDnPNIPWNfMEegqH+khSmGt8095dk7aqqEqNB4wfWmBdMmy5stOA0ijBrpXMQnAaVmpmhTSwp4tSS9NFqItSlGFKZqK62p9TSJonOtTKoBAtRE0KKhOEKI0dHSTSIqfg+DX3IIQqPFuX7jqaVwW4EuhidIPyq8xHaJBook+f8AQf1ri4mrWa7DSbPM5fhb02tIklV/+69zrcX4H+tCg3aRvyooVyTxf/YdfRbRT2681UX7D2zDoyHeGUqYOx1op5P4j8hWwu8ExAkNYOcFgxlWMQSpJG+hn37+GVbBXAo5SeYxtrsB18VNem2qHLmLCFFmjmjay43Rh/CfL+o+IpvNWkqIS5oTSM3599KbTeiUQjoUXw086SWolNLoUVCaJQjoTQoU0kdFQox+fz76EJSuRqNxqPUaiu+cYswuiwS0GT9k5dNB4wP4jXCcBazXLakaM6L5GWA9K7tx99Yz+0pQez9kjMdvM/yis35hU0WKyWIDa7SDC6nbWI010n4UGtn2dMsT7R8PGPDX3TR5vtFtBy/Z3Hu8eX3mlWbZIy5td+kR8Nvs+lSqCseF28xTMpknn22001PkB/GaoP0tXDOFWCBkdumslVB08kn+KtJwoEknMeflUwNDprt4/wCSs9+mI82FPityPKO7BHuINU35gh3ylc6JoTSZoprWVlCXNFNJmk0SiEqaImn8PgrriURiPEbUSYVizK3KVV2Mj9RS0fdFTIThMTQNEDRtTRCFCaFFQklUKTR0IQNBdx6j50Ro7KEkeopOMBMJh9z6n50KefC3JMIxEmDlOutCsMQWsLvF3FM8lraglpJCmf7KNwdR+NUX+7yqZFxwRGhVTtzTAA6mJ/GtKLY8PlTNkAvc8mA3/ZU/jXHBGS2sVksXwW+hPdlXEGTlCRDR1PVVc/CqXtBhMWt0m3atMp15u7J8Y1YeVdLxcBR5ug38XAqvxdtu9ZhBUFZGZdOVSQREzA94NPGWmUsIK5vfwuOQITYsEsuaMtuV1IAPP1ADejUxcONWJwVuCJEWQZExsDNdBx14pFwBnQueq5gSuYhgYIOkR1MRuIftSHliJzlQM6Tm3XQ7kiIjwO1A4g2VGlc2XNlbFE5TgUmJg4dx0kfd86S926EDnBWoLMpHcXARlCmTpsc2n7prqVg2Ck/XayWzKc+Ua5oyyVPj1zb0zi8baRreQFzAi2SQCDI7zOFBEgTp1gzqKR4uP7WrOCqP+VpM8utL+F1y18Ww9rA2RBgzbcQddPLY01/tVNZwljwPtDprXURxS1cdURcjMphF5nJEy4USTodT4qeoMSHZDHd52BkAkAKYUMQu2oE5p6ij4sbev9qTwj25j0XLjjkAYnB2OVshAYzJDbDw5d/Skjidn/yaa+Dnyrb8e4F9ItAMt63dBLquj94ZCbW5CxqRJHteFGOxNhb4cJFu2ua5ZN3MTCkhtCxMwDAOuU7HStBxLIvzUnhnD0WNw3HLNsgrhYIn7UjUZTIOhBGkGnXxVq6A30KS2bmFzKd5Jcjz8fwrYYHs+LltmdEDMbgS3lCOsvFomfa5SGOgpi32WuhlRlbMbgUhQuTJlzFg2YxpMEqJ0ESaZ4hmhU/DvGYVDZsWLTrdt2udGVlzOxWVIYSJ5hI2q9xXalnIJUSJ2A67/a/MCjx/ZSby93eAt5+TOpLBoYBXBgAbiZ6fFGH7MOO+zpbdyT3YVrY5zL5oDMHX2QAdND12fbtiSevRPsHzEJleNDYoY30CzP8AP7/WjXjwmcgzfuiPT2/f91JfslcV7bXl5C4AW0q95ENlJOYqoLQNRpmjc6xMT2UvI6kgwbxQSBmHKchO6lSG360+1bMSo7J0TCtLXHVEQmxkHICfD9bXxqBxriC4sr3tsEW82SCUPOQSDlOuw386mYng9m/igLSWkWCbqWx3rhlIDGGiYL21IjcH3VF7hYFq47Wrqul7LaiyyqyABizjKWWBn5tBoaQ4hpEg9dZq3cO8E266yVSws2yT9FfKpAzm6wUTtrMDXzpJ4hYabow4EEJlV1A5lbXLEH2TqfGtQnArn0YXkS8b+YMVQHL3Lhsj8q5jLAQSY300JqyHDEtm21x3a29rMWNi3yvE5MzWzJAJOpnTYTVGu1oud/RJtB7jAGcevRlc9GLwv/Af/Fmgt/Cn+6uf4k/hXT8JbtBgXtG2saxbVGB0A1bRZMxO/SausFaVedi2UkqqtbZCx2E+BHgdCJGwqPjANPX+E/hXEA/hc57P8VGFDi3YYi5B1F0xlBJ1VDOhHpUvgOBzYjvmtPz99mzI+VVfMx9q2CIk69da297OUDJif7MIXIyoSczZc6urEACBpBiisLeKBWuBZuFlum2oXu2taBbbGdXYeI036VHxDC4kNAMXufeEzw1QASSRpYeO05XzXIMDw63fdbVkvcuNOVV6wCx1YADQE+6oTIn/AKk9eQ6HqK6pwnh2GwqXMQeRQSbLhVDC3H1qm3ELzKyyRMCqPgNrDnFK9wB7d60MRlgHKbzmAVXcrlOaBHlV/GMk30R8FVMAAmZ9M9NFhMq/t/yGpWEw1pzlm6CdFi0TmYkBV30kneuh4rgGGd8oS7bJDqYhmNwBGUKDPLDHYfZ6b01a4Vbw7Yd7iApZR2v3ArJ9YDylp15GIXoOUGg8Y2Jnr35JjgapcG4c8uuryFT3P0aY8b4a77nw7fK5TmD/AEX4+42XuXt6E5rhQL6crEz7q6hgOMYp7gRmOqWCdBlVj3mbURMso2kCOlSOI8RxC3sKveEC5dKuBsV7jEPGv7SKdP1RWgrFwkELnc0NMEFc6wP6JsalwM62rigHlziCffFOcT/R5jlWbeGUZZMo9oGAOnXxqZ24xl08Ttr3zZVsMcucjUJeacvXUD4Csvgu0mLwr3frrl0Xbb2grO8IXIhwJIJERHnXPVpY3YnH28oWlOqGiAOvNVN3GiyxtXLtxXQlWGcmCDqJVYPuoVa8K4YWtKSq9f7sdGI/CjrM8PT6/pX2zl0vAXu8RbgHtKD8RqPjTeE9q7/7niP+HbpfB+DX7aFIt5czFIF5oViSBPd5TE75qlWeFFWaboBdsxEIusKIH1hOyj7NaSoUHit4W7edjorKx16Kcx+VYLE8fOJv5LTPo3eKJlCSMuTMJBEPcboAZE7T0zE4FB7bMToQrGFJ6DVE+ZrhPCuIXHZ2CqpEBSSYtuSCCAFJiFYRp010IOFcGJ06/lej+msa+pg/yOXk6eQ0N9rZXuuJ8bvW8VeU3LouBLYNudAVILZOUgAAkzp7J3mrVeJiwouI7scQGLmGXu4AkqxXUGSRscxB22x/HLtw3hAQHLqV1YsEl3PiZBIaOnkalcYxjmy7G48tczsMwy/u5QoAAkwB4+dc+EAAb9HzznOZ0K9QUy9tQ37guIAB7pIB3I5y05DIRecI43cfDC8bmiubRHeEOqsASdAZMIRBB9qdplzgXGi1oMn1a2fq2XMkjvHIOWRzLLqTmYbHXU1nBxC53Blo+rUQEhYzqSxljqRlBOmi+tL4djbq2OUKB3bnaJdi0O3Ll0UxvMqDOlIixI3jMjc+G+QPOykUHkhrgZjF8rIIyyDpnkTJI0IkXXBsZ9IZmsghsJZItzcNrMvMYJUTPJMAxpHmHeD8SOIuLhJKWrVwtbusDcMw+UyuUsxDEyY6z4Gh7O41gpIReZod9wyDdRHsnly7+yTuSDTXC8Tem6pYKGKFio9nNqCIbSRII10Y6CqIAnYWzPLbz+ymmx9QsIBl9xDG7OOsXB55XvAC0dniGIuYuwhaFVeZu9YBSVuRlO8GBE+ExOtJwGMuvi7eFuOoT6xLjWhmWZbYSYUhVEGP60WG4jeGIv5bhBYzny5mtc0grMaRmEGdH2mlpjXa9fXPkDC2oIAVgBkKsNf2Y16O3jUgAC8Zf7da3mMvLcUqj3S1rgHOIH/HYibGIkd3KBFxmL3VniT/AEtcNmgEOrOTmiO9ysMx0EC3ofE9actX8QmINq2hZySttluBUe5byq5PPKrlLa+mhkkUNjH3TirpXLn1CnKc1tiRBB1OmoidQdadt8RdcU7EkvbQG3DZVz5VBW6RlBzAMSffrJogDbIHM7g7je5MZCBqIdTqWkOu5zRLWG8EAHCJOW0DKRabfD37r4sWnBRbjlQ5Ycptgs5J3Bz5YBMb7jSnsTxa/axa4ZEXMHyhpi2HVnUmZP8AdqQPU+tQOG2rjYlzzohJHe94VzMcsANlYqZZmga8oGwAqFjuIXBiroNsnklCxKkCFyNygkjPJPUgkSIFPC0aDLc/g3Mbkj8Q01HjN04iPlECSc5AN8JEAQDOV5tcfxXEW27srn+sdSLZuFhbHs9RzSDtAPQxs52l4jdsBoi4oRGFwoUIcwkaECAhkGOo8jVDc4oRirYcM0BHPdKku6t3h9oQRI2IJ0AM61F47ifq7aAXQHYyHb2gGJYMSoM82+0elJre+GnXx5+B28uUrWsw9k+qARFjlsORGcQDoRBGux4hxd7GEs3u85WAZSVzNzkd4W2KklsxInWPKF8Q7QPh8IkgstxM2UkyBeJYqzEgqVBAmW9oSNNam0ouPaszaIRkPIQ4Xll2zWzmAN0hsxIyqupEE032tc2U+rum4pusS85lOdUK75iMh2UmNSepNDYJa3zvfIba5fUm91FSk8Bz9gXDuiDM3kznIMG8DKwV5jse1q3Zuh8RlYm2wJvNlVWKB3EnSGnXwIG8U/xLjl1rK4ybnNcFp01SEBlmyu0bAxMTmWY2rF43iCdzIv8ANFvl3BFtMuq6TPX9YwT5ymxtw4cgXVCi0FYalCQ4Y3AZMSoCRG0aTUjFAk52187A363K1NANJwtnD3rdme7NwbgbaGLxsr25j79213ribQYd7lunP7YdXALAH7BOo8NhTdq/ir/OClsWLa3bou3Ll0MfrPq7cEzyLBMj2twTVPZxl36LlCrHdsCMoKkklEfMREBTqfEA9Ka4FibjW1HIQSM3XOmQfVlchBOaTrI1IimRAOW2Z1m/U6QLIbQxPDWB2I99tmDu92BIh0jQhwjnMm04W965dW2t9HCWnuP3kDOVZSBv7QzCDsIq34Hxs3rygsQEW6FdsziEyrbJDeyxzs0SRoJXTXHcCa9aa4gyox7sZlXUB5eCZ0DIQuUyAI0ml4XFMbl9HvG2C+wyWyRJbl000I1ESpg6U3ABxFreIzIvAtqdb68mxhrQ5rSG1Jwk4TFjIxElxBiYtGmi1GH4r9LbEoqqH7jUFQ727jAG5cWANiZ06z+vFQuz+MtX2S06H6y4W71VH1Si247tCByrnyrE7M1U3COIv3+JdIYu7c8C5IcsGnMRK5ZHrlM6QWcI5W7eVWKKS6FFCplVnDKV3k+BG2U+NIiJPh6xyUsoPdgbeHEgeLZ5wcpyGLO2t7/tC4L1uy7NkGIYWnd4Ys72hZLCc2VTbBOsZW8gKndscaLYuWrqrdFo96pHMpe6Zyk3BJUC4d4gHQyDWcuYplxYy3O8MAujakKiDJlLHc6HSCIB60jjmOvJ3Ra4rF1KsWRVYk5mz7aZQ0akwQOmgIDiBIy3dfPb3GmypjRSa6o1phpwkxTs+wzsSJMYYsTnqtbfxzYf6PetMjF8zQQCyKUHdryzLS+pmNCNYrU2uMreOCvMbYe0c962t6zKs2HuIQM7iYa5Fcu4pxO73Lt38Q6EARlWAw5FzHKGZyT5knStHxC1YbC5RYVL1uxavd4hYd4puLaZXQmJ5w2YRsa6+DuDGU5X+udvJeX+sUgxzGOEOAMmGCRPd+Um8SDJ5ixXQuM3UxGHvZcK7XDauC22Wy5ByNADW3Y6zGnjXPuOcAu5wRYuaKuhSBuepEGqi/wy5aYAsgZgSAGMwNzT3BcRirt5bFrEOhJIJ711RQkl2YzoFCsT6VsytSqj9twPgvNfwlSkA57SBldXPDuGZbYUqJBadP2jQqcy41dF4xaZehF9oM60KvCs8K3Bh+jt65WX/wCRl+6lMsaHIv7LMWB9Bm/6Ky17iOPf28lgb/WvB/w5LH+SoN/EWf77FXLv7Fsd2vuLz/lFJlOo/wCVpWdbiKFG1R4B218hfyC1GM4hZtyDeA8khT7suU/ca878eud1i8R3ZibzleoyFiy6EeDCuuW+J2gctjDLJ2Lr3zH+aRPoBWD7R8L/APEI+ILIbuJu5y5VYRCATDGRovgBpArR/DPYJfHXWix4b9Sp1KkUcUjWCPXMfWNI5U/CsXchWh3KLiXXlLRmtJbknSQI91RuGYYXgRdxPdgaw2UyPEZ3WdfCdjtUmx9GW3iFF253ma4trKV5kkZQw7s7kfZYelO4G9KDCnMJLIl3NyM+ihQmWCmYiWMnWRE5a53OY3PT7DrmeS7mvqS4k5+fObmc+pTd7h9rIMmJe4pOUqFCwNBJh3/lP+lR8Xw9gBkuZlIH1atnuLIEhgmi9dGy9dKF7ALZtgvcsXLhMqiXCz2jGY58og7RGYwemtbLsU+Dv2Cl7Laa2VHeLnZ2B20Ykbqx002gaUPGEWAla08Tz8xy309uXoVgrOHujlBg9QJJnzA0npV3Y4MLDRcuLny5mRheChmtl1Q3EYKTplENqXI6VqHxPC7DnLbvvBIJa1pmB1BRmQTtpFT8Zxpe5RmsolkkMk4FUQnUAzbvluu5GhjrFYl0iHEXXpDhmy0sJ+u/Iz7fVcwxNpnu3GsWnyFuXKrtA9ZY+epNRLuHddWRhPiNQdZB67Tv+FbHH8WsSEW3cKkGYRHO5KiWHMNYM6xUfCpgm5nXu8+aB9YDc19kW0V1VJMAzMrpVtqgWv8Af+VyVeCwWc8c5n8T9p1usorMmokSAd/MjpT2Fu3AZRmliq7/AGjMA/n5VprPCVu3SjWbypaXMty2e9t5ILIzFUmCNmG+gjTRzD9mVKhbTpe5puHvFtMyiSFyu4KnUaEih1amBLjb0jQzlfx81kylUn9ozGxg+U25R6IcHum9h1zNeGTMALIIZ2ZiVdjPNlOnkB03qP2p4hluqwgtlbMjCGQNlItsFI21giBB28ZWEvqirhruGOHGpDAT38CJuZjqeYEFTGpgQagY7LeGHvsGuMWKXRaElsozKFHiASPdWVu1vrb8iPL0XpTU+GDxZzZIu6bOAcSCf9mmIAuTG1U165e7y7GqIDKkKEBdRO8mZIjU60jBq9+4FOe4TKjmEyUbLGYwNp36U9cFqLiC1czM4NsEsSEnUMAdToRtvUmzcsMxIw90oVAQLmnMpbmMMJ0MddjXSGgZBeU+tUfJc4mbm+ZVh2RS3dDWbitnuEZGZiECJ7cQwLEkgHXboYipXbnAC1bUD2TlYIGLAFbbJqf1gttQQCQOhpjhmLXDnJaCrltg37rK4JbNBAGh0MwPFZ3qa1y7iU7prRuNnGa9IXubiiAqSwAQHKrZzBOaIbWufFicXXAHMRGeWk8+XgvSdSFKkGvhzntMANkh2QOK84eVpGRuVgnaZ67f96kOC90rkjM0BBAIzGAB08BWzTs8id19Jupmtowyo5Ys2eVy5TJygrOnqaDcI7h1U2AMOzd5ne7nGjBEbLaDEauAEylmnWI06GvxiW3C853D4T+5bx9hKytmxfyhQDlbQJmEvAOy5gSNOnuqZwfhJLm3fV7SbG4bRYLBJJJ8InXXpvoKvMTiMJZLXLKG5mJS4znI6seaCl32Ccsq4g6EeIqRwDtRaS4LjKxZScpZrDQIIAgLmaB4mJArN1UjQrro8EKpH7gPKDBH1iPCLKLxXgBdRiFuXFdu7DJcUWmjulCm3zEMNI1KxA010z97gdwNGY+MMIbTTTMcp6Deuv4rj+It2kc2XZLmiqttFO2xVCZ08ZqCeLYQqVODexcUZi0G0hkkDMisJ1BEBGJg1myviu0/nLz/AIWruEpgHE2ZmL2GWltdwVh7dt8LZQMgQPmZbjKIuAMuZRLAOF5hE6EjXWpGJXBYq4YfESYIjXMyW0XQrbYCAoMg9T5U32u42t2+YFo27IyhW5gxiTlAyyuYHwiaYtjh7Ncv2DeAtKW7q4FhizIiQUIlQzAlTqYAkb10saJxAQVwV6j8IolxLRkNB176XWexuDa055XCgkDOsNsNwQCNDvA93RQwr3bRvTORlU66jNosg7DTfarHiYN4tcNkLcD2y4tqyg2mt5khZOUgIf5h4GrLhdnCIbn0jDX4fL3MZ9BkXc5eYyR+r7tqcyJBWAhZzC4S46XSBIFrOSI0UXVUmPCZrpfaHj+Ha1cAsXrd+4gtsHK92tsXO+5BAaSQo10gVT9i+B4a5dRb0qhtW8wuZ7Qdit3OofUCGNs+nTeupYHg0YWzbugvFtA63rZcTlGYK5U5tdogVQqQZKG0sQLW/Y/gFcn47xU/S1Jjle4N9YBIjy2qZ+j3FTjbwCLcLrihbttqtxirMLZ8QwBWOubzrQcT7E4R3Z2vYq2xZm5rWZBJJPMiEAanciqXD9jxaYthsaCwbMpdGtQQZBFzYGetcXCcMKIEkZRY85+69fjuIdXbha0xM5HYBXFzj+GBIbgaBuvNcT/ly6elCk3OIdop5XZh0I7hgfQ5daOu+3RXjXWlXgBGt51tfvNLR5KJb4iiNvBptba8fFvq1+CyT91MGPWkwTTqcdWfrHh75rg4f9E4OiPlxH/a/pZvonMRxJ4IWLSncWlFufVhzH3k1mcbgLTMWW0pYjXlmfEE1pFwvjTnc+AHqd/cK5CSbleqGgCAFiEwCKQ30eCuxVYI9/vrLY3CX7TKAhK2nNy39W5JM5gpjQjNrqdMzeMV2E2h119fwFMXLCHcUiAbFELhVjhdw+0rr4A23MnzgaDz38Jq84fgAq98l9bNxVIy3iUJ3nKcuoMzqAdoIiupnCp0WaNcGvVasPSwrk9vij2lKWsSMp9oE5ZkQZ1YHRm+/wAam43tY9/DrhGFsACDcDe0FG8RM+4V0m5w62fsL8BUS72csNvbt/yL/SsnU6Ty0ubMGRyK37ere+fILlF7hKRyXbJMj2r6RBHX2SD5RpG9PWEtKpe5qvdqqZRIBQjOBoYlp5vPcZpHR37I4b/hoPRVFR27KWNQgyiQeULqRsdQRInfcTVvh3XX9SufCsHZ404WxZN65aQT32SVOt12gKIBOViQDpLR41M4i1m5ddMNfuZAwuWtBLOVVXBXNOmwJ1I0IgCtKnYe0pLZmk7kw5+LCmT2GSZ75/LRfPrE61TXR5k+ZlOFD/29fRIdbV0HQrcQW368yhiVjzy6HTzLV4We7CYVhbKvnAP1hUkbdZ6iObca1e2+w9h4zuxI8gKm4HsVhUbMA0xvpI9NNPdUENkEddcl0t4mpgLHXkRzGRz1EgSHSNoN1S9msG9nvfpLKQ5zqZAaW1cEA6A8pjxFN8YsX86XMOyLbRZDaGGMhifAZTE+vjWxscAsINEk+LFifvpC8CsFTKHXQgO0fAmKoOvK5y1Y2yMPbtEYlxeuszXCilbYJ0ABJHMdiV0WBqCZBPGcdvXrOVWtodRltKruASQWaTC6acqid9Ot7d7B4MtMOD++T8xScR2HtMsd/dEbCUPzWkMMyVsazw3Cyw5ZnxP4EDlN1kMBcw1sgX7t9lyNqpTvFutoYDMAg3ady2WZAqvweMPd3LanNlvW7pUa5kFu6t0qJ6BtddjW1s9iLKnW45neQv8A0gU4vYrDh8/NmBkMHdSI6gg1eNc2FYvFd3JgLaS6FCC6uVAbYDFyq5sp1ZQBPtyTvUS5hcNErfshoEwb3tGNg1qMo3jfz6V1NOAWgc2pMblix38TU21wpF1Cx6gfj0pBwAgJ4SFzzH9ocRetra7+Ut6o1q2xZo0GbaPnHTeo9mzcYNriyzrkJNo5SmaYLHUDQbeY2NdUtoBoVHpA+741IW0hGw+A+VZsYxghjQP5zWxqVDYuK43d7OOWISzcdTuSEtMPJJJjXxHlpvTmC7J4pWYC0WtuuRhmUPlzKwI1jMGVTvrEda6/9EXy+VI7pl6Ej4mtC5Y4VkeDdnrqBmaWd8uY3MumQQoCqSBAJEAmrmxgCu6D+UD5f1q8tuN+npToXTf8+6miFW20A+zH8Ij51LweJa1/ZuVneDofUbH3ipOVeo/Gm3w3hTlSrTC8dIjvLVq4PEKFb5EH4CrBb/D72r2rat+3bUf823xNZKCOnxEfKlqxogK8btz5rXf7Awba/RpnqAkH0g0VZTKPL4UKWHqy07d+5/8ATvdItYanO5A60dCs1KMwKQTQoUJpDXT40yhB6/GhQoSSzA9aIMKOhQhGT0pDMNvyaFChNM5ifSiIoUKEkX58fnSS80KFCFJVoA+NGh1oUKRVFHn0900QeB+fGhQphJA3JikhzNChQgpu48Hbf7qQhn3UKFNJKW7E+FKF8g0KFCE4xBHp9xpSEzB3+40KFCE6jH/vSjPQff8AKhQoQm8+vn6f03pa3Y6f0+FChTCSfDmjD+UUKFUkUsuDG3wpL2R/2o6FClI7keJ/PvoUKFUkv//Z
+" alt="Image">
+        <div class="carousel-caption">
+          <h3>More Sell $</h3>
+          <p>Lorem ipsum...</p>
+        </div>      
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+</div>
+  
+<div class="container text-center">    
+  <h3>TAKIM ÜYELERİ</h3><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <img src="https://cdn-1.motorsport.com/images/amp/2GzrymV0/s6/mattia-binotto-team-principal-.jpg" class="img-responsive"  alt="Image" width="500" height="500">
+      <p>1000OTTO</p>
+    </div>
+    <div class="col-sm-4"> 
+      <img src="https://c.ndtvimg.com/2022-06/tr1b6s7o_charles-leclerc-afp_625x300_11_June_22.jpg?im=FaceCrop,algorithm=dnn,width=806,height=605" class="img-responsive"  alt="Image" width="500" height="500">
+      <p>CHARLES LECLERC</p>    
+    </div>
+    <div class="col-sm-4"> 
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCCy8wPu3mxCduyWDaIBayqLCNMJjaaWsrSlkGEwvuubkNOZthABopHQjXzoCH5k_xusE&usqp=CAUd.it/150x80?text=IMAGE" class="img-responsive"  alt="Image" width="500" height="500">
+        <p>CARLOS SAİNZ</p>    
+      </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <center><img src="https://upload.wikimedia.org/wikipedia/tr/thumb/c/c0/Scuderia_Ferrari_Logo.svg/1200px-Scuderia_Ferrari_Logo.svg.png" width="170" height="200"></center>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div >
+    <h5 style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color: rgb(255, 255, 255);">
+        Scuderia Ferrari, İtalyanca'da Ferrari takımı anlamına gelmektedir. Enzo Ferrari tarafından 1929 yılında kurulmuş olup, uzunca bir dönem Alfa Romeo'nun yarış bölümü olarak faaliyet göstermiştir. 1947 yılında yol otomobili üretmek amacıyla Ferrari'nin kurulması ile birlikte Alfa Romeo bünyesinden ayrılıp, "Gestione Sportiva" adıyla Ferrari'nin bünyesi altına geçmiştir.İlk yıllarında Formula 1 , Formula 2 hem de Le Mans'da varlık gösteren takım 70'lere doğru Le Mans'tan ve 60'larda da F2'den çekilmiştir. F1'de ise hâlen varlığını sürdürmektedir.
+
+        Formula 1 Dünya Şampiyonası kapsamındaki ilk yarışına 1950 yılında Monako'da çıkmış, ilk zaferini de 1951 yılında İngiltere'nin Silverstone pistinde José Froilán González ile elde etmiştir.
+        
+        Formula 1'de Ferrari ile şampiyon olan pilotlar Alberto Ascari (1952,1953), Juan Manuel Fangio (1956), Mike Hawthorn (1958), Phill Hill (1961), John Surtees (1964), Niki Lauda (1975,1977), Jody Scheckter, Michael Schumacher (2000,2001,2002,2003,2004), Kimi Raikkonen (2007).
+        
+        Hâlen Formula 1 Dünya Şampiyonası kapsamında en fazla yarış kazanan, en fazla pol pozisyonu elde eden, en fazla en hızlı tura sahip olan, en fazla podyum elde eden, en fazla pilotlar ve takımlar şampiyonuluğu elde eden takımdır.
+        
+        13 Aralık 2022 tarihi itibari ile Mattia Binotto yerine takım patronluğuna en son Alfa Romeo F1 takımında bulunan Frédéric Vasseur getirilmiştir.
+    </h5>
+  </div>
+</div><br>
+<br>
+<br>
+<br>
+<br>
+<center>
+  <video controls width="1000">
+      <source src="Snapdragon is Scuderia Ferrari’s Premium Partner for 2022 F1.mp4">
+  </video>
+</center>
+<br>
+
+<center><h1 style="color:red">2022 sezonu puan durumu</h1></center>
+<br>
+<br>
+<br>
+<br>
+<table id="customers">
+<tr>
+  <th>GRAND PRIX</th>
+  <th>DATE</th>
+  <th>PTS</th>
+</tr>
+<tr>
+  <td>Bahrain</td>
+  <td>20 Mar 2022</td>
+  <td>44</td>
+</tr>
+<tr style="color: yellow;">
+  <td>Saudi Arabia</td>
+  <td>27 Mar 2022</td>
+  <td>34</td>
+</tr>
+<tr>
+  <td>Australia</td>
+  <td>10 Apr 2022</td>
+  <td>26</td>
+</tr>
+<tr style="color: yellow;">
+  <td>Emilia Romagna</td>
+  <td>24 Apr 2022</td>
+  <td>20</td>
+</tr>
+<tr>
+  <td>Miami</td>
+  <td>08 May 2022</td>
+  <td>33</td>
+</tr>
+<tr style="color: yellow;">
+  <td>Spain</td>
+  <td>22 May 2022</td>
+  <td>12</td>
+</tr>
+<tr>
+  <td>Monaco</td>
+  <td>29 May 2022</td>
+  <td>30</td>
+</tr>
+<tr style="color: yellow;">
+  <td>Azerbaijan</td>
+  <td>12 Jun 2022</td>
+  <td>0</td>
+</tr>
+<tr>
+  <td>Canada</td>
+  <td>19 Jun 2022</td>
+  <td>29</td>
+</tr>
+<tr style="color: yellow;">
+  <td>Great Britain</td>
+  <td>03 Jul 2022</td>
+  <td>37</td>
+</tr>
+<tr>
+  <td>Austria</td>
+  <td>10 Jul 2022</td>
+  <td>38</td>
+</tr>
+<tr style="color: yellow;">
+  <td>France</td>
+  <td>24 Jul 2022</td>
+  <td>11</td>
+</tr>
+<tr>
+  <td>Hungary</td>
+  <td>31 Jul 2022</td>
+  <td>20</td>
+</tr>
+<tr style="color: yellow;">
+  <td>Belgium</td>
+  <td>28 Aug 2022</td>
+  <td>23</td>
+</tr>
+<tr>
+  <td>Netherlands</td>
+  <td>04 Sep 2022</td>
+  <td>19</td>
+</tr>
+<tr style="color: yellow;">
+  <td>Italy</td>
+  <td>11 Sep 2022</td>
+  <td>30</td>
+</tr>
+<tr>
+  <td>Singapore</td>
+  <td>02 Oct 2022</td>
+  <td>33</td>
+</tr>
+<tr style="color: yellow;">
+  <td>Japan</td>
+  <td>09 Oct 2022</td>
+  <td>15</td>
+</tr>
+<tr>
+  <td>United States</td>
+  <td>23 Oct 2022</td>
+  <td>15</td>
+</tr>
+<tr style="color: yellow;">
+  <td>Mexico</td>
+  <td>30 Oct 2022</td>
+  <td>18</td>
+</tr>
+<tr>
+  <td>Brazil</td>
+  <td>13 Nov 2022</td>
+  <td>37</td>
+</tr>
+<tr style="color: yellow;">
+  <td>Abu Dhabi</td>
+  <td>20 Nov 2022</td>
+  <td>30</td>
+</tr>
+
+</table>
+<br>
+<br><br>
+<footer>
+  <div class="container">
+    <center>
+    <figure>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/F1.svg/2560px-F1.svg.png" width="220" height="60" alt="Logo">
+    </figure>
+    <br>
+    <br>
+    <p style="color: white;">
+      TÜM HAKLARI MUHAMMED SİNA DİNEK ADINA SAKLIDIR
+    </p>
+    <p style="color: white;">
+      MADE WİTH VSC <i class="ion-heart"></i> By MUHAMMED SİNA DİNEK
+    </p>
+    <a style="color: white;" href="https://www.instagram.com/m.sina07/">İNSTAGRAM</a>
+    <br>
+    <a style="color: white;" href="https://twitter.com/mSinaDk">TWİTTER</a>
+    <p style="color: white;"> TELEFON: 05070334743 </p>
+  </div>
+</center>
+</footer>
+
+</body>
+</html>
